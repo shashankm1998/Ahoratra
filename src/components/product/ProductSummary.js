@@ -1,7 +1,7 @@
 import React from "react";
-import reviewsData from "../../data/reviewsData";
+// import reviewsData from "../../data/reviewsData";
 import useActive from "../../hooks/useActive";
-import ProductReviews from "./ProductReviews";
+// import ProductReviews from "./ProductReviews";
 
 const ProductSummary = (props) => {
   const { brand, title, info, category, type, connectivity } = props;
