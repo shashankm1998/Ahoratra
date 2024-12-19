@@ -52,12 +52,12 @@ export const categoryMenu = [
   },
   {
     id: 3,
-    label: "Astro-Clock",
+    label: "Jewel",
     checked: false,
   },
-  {
-    id: 4,
-    label: "Books",
-    checked: false,
-  },
+  // {
+  //   id: 4,
+  //   label: "Books",
+  //   checked: false,
+  // },
 ];
