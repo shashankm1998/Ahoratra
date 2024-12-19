@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, A11y, Autoplay } from "swiper";
-import { displayMoney } from "../../helpers/utils";
+// import { displayMoney } from "../../helpers/utils";
 import productsData from "../../data/productsData";
 
 import "swiper/scss";
@@ -33,12 +33,12 @@ const HeroSlider = () => {
           title,
           tagline,
           heroImage,
-          finalPrice,
-          originalPrice,
+          // finalPrice,
+          // originalPrice,
           path,
         } = item;
-        const newPrice = displayMoney(finalPrice);
-        const oldPrice = displayMoney(originalPrice);
+        // const newPrice = displayMoney(finalPrice);
+        // const oldPrice = displayMoney(originalPrice);
 
         return (
           <SwiperSlide
