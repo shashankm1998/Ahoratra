@@ -1,13 +1,13 @@
-import React, { useContext, useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
-import { IoMdStar, IoMdCheckmark } from "react-icons/io";
-import { calculateDiscount, displayMoney } from "../helpers/utils";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+// import { IoMdStar, IoMdCheckmark } from "react-icons/io";
+// import { calculateDiscount, displayMoney } from "../helpers/utils";
 import useDocTitle from "../hooks/useDocTitle";
 import useActive from "../hooks/useActive";
-import cartContext from "../contexts/cart/cartContext";
+// import cartContext from "../contexts/cart/cartContext";
 import productsData from "../data/productsData";
-import SectionsHead from "../components/common/SectionsHead";
-import RelatedSlider from "../components/sliders/RelatedSlider";
+// import SectionsHead from "../components/common/SectionsHead";
+// import RelatedSlider from "../components/sliders/RelatedSlider";
 import ProductSummary from "../components/product/ProductSummary";
 import Services from "../components/common/Services";
 
@@ -16,7 +16,7 @@ const ProductDetails = () => {
 
   const { handleActive, activeClass } = useActive(0);
 
-  const { addItem } = useContext(cartContext);
+  // const { addItem } = useContext(cartContext);
 
   const { productId } = useParams();
 
@@ -30,19 +30,19 @@ const ProductDetails = () => {
     images,
     title,
     info,
-    category,
-    finalPrice,
-    originalPrice,
-    ratings,
-    rateCount,
+    // category,
+    // finalPrice,
+    // originalPrice,
+    // ratings,
+    // rateCount,
   } = product;
 
   const [previewImg, setPreviewImg] = useState(images[0]);
 
   // handling Add-to-cart
-  const handleAddItem = () => {
-    addItem(product);
-  };
+  // const handleAddItem = () => {
+  //   addItem(product);
+  // };
 
   // setting the very-first image on re-render
   useEffect(() => {
@@ -58,11 +58,11 @@ const ProductDetails = () => {
   };
 
   // calculating Prices
-  const discountedPrice = originalPrice - finalPrice;
-  const newPrice = displayMoney(finalPrice);
-  const oldPrice = displayMoney(originalPrice);
-  const savedPrice = displayMoney(discountedPrice);
-  const savedDiscount = calculateDiscount(discountedPrice, originalPrice);
+  // const discountedPrice = originalPrice - finalPrice;
+  // const newPrice = displayMoney(finalPrice);
+  // const oldPrice = displayMoney(originalPrice);
+  // const savedPrice = displayMoney(discountedPrice);
+  // const savedDiscount = calculateDiscount(discountedPrice, originalPrice);
 
   return (
     <>

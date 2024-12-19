@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, A11y, Autoplay } from "swiper";
-import { displayMoney } from "../../helpers/utils";
+// import { displayMoney } from "../../helpers/utils";
 import productsData from "../../data/productsData";
 
 import "swiper/scss";
@@ -49,9 +49,9 @@ const FeaturedSlider = () => {
       className="featured_swiper"
     >
       {featuredProducts.map((item) => {
-        const { id, images, title, finalPrice, originalPrice, path } = item;
-        const newPrice = displayMoney(finalPrice);
-        const oldPrice = displayMoney(originalPrice);
+        const { id, images, title, path } = item;
+        // const newPrice = displayMoney(finalPrice);
+        // const oldPrice = displayMoney(originalPrice);
 
         return (
           <SwiperSlide key={id} className="featured_slides">
