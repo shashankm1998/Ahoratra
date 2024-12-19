@@ -106,7 +106,7 @@
 
 @include devices(lg) {
   #filterbar_mob {
-    display: block;
+    display: none;
     position: fixed;
     bottom: 0;
     left: 0;
